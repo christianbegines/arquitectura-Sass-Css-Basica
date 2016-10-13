@@ -236,6 +236,13 @@
     color:white;
 
 } 
+.vertical-menu__item-0--open{
+    background-color: #4D5158;     
+    width:700px;      
+    border:0.1px solid #41444A;
+    color:white;
+
+} 
 .vertical-menu__item-0--close:before{
     content:'\f07b';
     font-family: FontAwesome; 
@@ -251,7 +258,7 @@
 .vertical-menu__item-0--open:before{
     content: "\f07c";
     font-family: FontAwesome;
-
+    padding:10px;
 }
 
 .vertical-menu__item-container-1{
@@ -283,7 +290,25 @@
     font-family: FontAwesome;  
 
 }
-.vertical-menu-titulo--icono:after{
+.vertical-menu-container--icono_open:after{
+    float:right;   
+    content:"\f0d8";
+    font-family: FontAwesome; 
+    padding-right: 10px;
+}    
+.vertical-menu-container--icono_close:after{
+    float:right;   
+    content:"\f0d7";
+    font-family: FontAwesome; 
+    padding-right: 10px;
+}    
+.vertical-menu-item--icono_open:after{
+    float:right;   
+    content:"\f0d7";
+    font-family: FontAwesome; 
+    padding-right: 10px;
+}    
+.vertical-menu-item--icono_close:after{
     float:right;   
     content:"\f0d7";
     font-family: FontAwesome; 
@@ -296,5 +321,10 @@
     color:white;
    
 }
+.visible{
+    display:hidden;
+}
 
-
+.invisible{
+    display:none;
+}
