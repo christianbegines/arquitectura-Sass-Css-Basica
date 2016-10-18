@@ -1,0 +1,73 @@
+.boton{
+    font-family: "Lucida Grande",Arial,Verdana,sans-serif;
+    background-color: #337AB7; 
+    border-radius: 5px;
+    padding:10px;
+    font-size: 80%;
+    display:inline-block;
+    text-decoration: none;
+    border:1px solid #87929b;
+    outline: 0;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    background-color: #afbdc9;
+    color:white;
+    cursor:pointer;
+}
+.boton:hover{
+    background-color: #737D84;
+    color:white;     
+}
+.boton:active{
+    box-shadow: inset 0px 3px 10px 0px #4c5760;
+}
+.boton--primary{
+    background-color: #12588e;
+    border-color:#2a6291
+
+}
+.boton--primary:hover{
+    background-color: #0c4675;   
+}
+.boton--primary:active{
+    box-shadow: inset 0px 3px 10px 0px #183a54;
+}
+.boton--error{
+    background-color: #EDE987;
+    border-color: #bfb831;
+}
+.boton--error:hover{
+    background-color: #d6cb39;
+
+}
+.boton--error:active{
+    box-shadow: inset 0px 3px 10px 0px #968f28;
+}
+.boton--warning{
+    background-color: #E08E86;
+
+    border-color:#ce685f;
+}
+.boton--warning:hover{
+    background-color: #cc5d53;    
+
+}
+.boton--warning:active{
+    box-shadow: inset 0px 3px 10px 0px #7c322c;
+}
+.boton--xl{
+    font-size: 20px;
+    padding:10px;
+}
+.boton--l{
+    font-size: 20px;
+    padding:8px;
+}
+.boton--s{
+    font-size: 10px;
+    padding:5px;
+}
+.boton--xs{
+    font-size: 5px;
+    padding:4px;
+}
