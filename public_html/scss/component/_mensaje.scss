@@ -1,1 +1,32 @@
+.mensaje{ 
+    font-size: 80%;  
+    font-family: "Lucida Grande",Arial,Verdana,sans-serif;
+    background-color: #afbdc9;
+    padding: 15px;
+    border-radius: 5px;
+    color:#606a72;
+}
 
+@each $format, $color in $format-variations{
+    .mensaje--#{$format}{
+        background-color: lighten($color,20%);
+        color:$color;
+    }
+}
+
+/*.mensaje--primary{
+    background-color: #8dbbe0;
+    color:#f2eeed;
+}
+.mensaje--error{
+    background-color: #efe4ac;
+    color:#8A6D5F;
+}
+.mensaje--info{
+    background-color: #D9EDF7;
+    color:#3C763D;
+}
+.mensaje--warning{
+    background-color: #F2DEDE;
+    color:#A94D6D;
+}*/

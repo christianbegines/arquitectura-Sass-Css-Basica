@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="stylesheet" href="css/main.css" type="text/css"/>
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@ and open the template in the editor.
             <script src="html5shiv.js"></script>
             <script src="respond.min.js"></script>
         <![endif]-->
-        <link rel="stylesheet" href="reset.css" type="text/css">
+        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
     </head>
@@ -24,6 +24,10 @@ and open the template in the editor.
             <div class="panel">
                 <header class="panel__cabecera">Cabecera</header>
                 <div class="panel__contenido">Contenido<br>Mas contenido</div>
+            </div><br>
+            <div class="panel panel--primary">
+                <header class=" panel__cabecera panel__cabecera--primary">Cabecera</header>
+                <div class="panel__contenido panel__contenido--primary">Contenido<br>Mas contenido</div>
             </div><br>
             <div class="panel panel--info">
                 <header class="panel__cabecera panel__cabecera--info">Cabecera</header>
@@ -47,6 +51,8 @@ and open the template in the editor.
             <div>
                 <div class="mensaje">Mensaje</div>
                 <br>
+                <div class="mensaje mensaje--primary">Mensaje</div>
+                <br>
                 <div class="mensaje mensaje--info">Mensaje</div>
                 <br>
                 <div class="mensaje mensaje--error">Mensaje</div>
@@ -60,6 +66,7 @@ and open the template in the editor.
                     <button class="boton boton--primary">Primary</button>
                     <button class="boton boton--error">Error</button>
                     <button class="boton boton--warning">Warning</button>
+                    <button class="boton boton--info">Info</button>
                 </div><br>
                 <div>
                     <a href="ww.google.com" class="boton">Default</a>

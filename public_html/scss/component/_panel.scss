@@ -3,7 +3,7 @@
     font-family: "Lucida Grande",Arial,Verdana,sans-serif;
     box-sizing: border-box;
     border-radius: 5px ;
-    box-shadow: 3px 3px 10px #afbdc9;
+    box-shadow: 3px 3px 10px darken(#afbdc9,40%);
 
 }
 .panel__cabecera{
@@ -21,42 +21,25 @@
     border-right:2px solid #5983a5; 
     background-color: white;
 }
-.panel--info{
-    box-shadow: 3px 3px 10px #93b4bf;
+@each $format, $color in $format-variations{
+    .panel--#{$format}{
+       box-shadow: 3px 3px 10px darken($color,40%); 
+    }
+    .panel__cabecera--#{$format}{
+        background-color: $color;
+        border:2px solid darken($color,20%);
+        color:darken($color,20%);
+    }
+    .panel__contenido--#{$format}{
+        border-bottom:2px solid darken($color,20%); 
+        border-left:2px solid darken($color,20%); 
+        border-right:2px solid darken($color,20%);
+    }
 }
-.panel__cabecera--info{
-    background-color: #4896d6;
-    border: 2px solid #4643db;
-    color: #4643db;
-}
-.panel__contenido--info{
-    border-bottom:2px solid #4643db; 
-    border-left:2px solid #4643db; 
-    border-right:2px solid #4643db;
-}
-.panel--error{
-    box-shadow: 3px 3px 10px #cc7972;
-}
-.panel__cabecera--error{
-    background-color: #e08e86;
-    border: 2px solid #b53d32;
-    color:  #b53d32;
-}
-.panel__contenido--error{
-    border-bottom:2px solid  #b53d32; 
-    border-left:2px solid  #b53d32; 
-    border-right:2px solid  #b53d32;
-}
-.panel--warning{
-    box-shadow: 3px 3px 10px #ede987;
-}
-.panel__cabecera--warning{
-    background-color: #ede987;
-    border: 2px solid #ede73b;
-    color: #9b9725;
-}
-.panel__contenido--warning{
-    border-bottom:2px solid #ede73b; 
-    border-left:2px solid #ede73b; 
-    border-right:2px solid #ede73b;
-}
+
+
+
+
+
+
+
