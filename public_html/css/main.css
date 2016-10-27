@@ -459,67 +459,68 @@ html {
   font-size: 80%;
   display: inline-block;
   text-decoration: none;
-  border: 1px solid #87929b;
+  border: 1px solid;
   outline: 0;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
   background-color: #afbdc9;
+  border-color: #87929b;
+  cursor: pointer;
+  font-family: "Lucida Grande",Arial,Verdana,sans-serif;
   color: white;
-  cursor: pointer; }
-
-.boton:hover {
-  background-color: #87929b; }
-
-.boton:active {
-  box-shadow: inset 0px 3px 10px 0px #4c5760; }
+  font-size: 80%;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s; }
+  .boton:hover {
+    background-color: #8197aa; }
+  .boton:active {
+    box-shadow: inset 0px 3px 10px 0px #5a7185; }
 
 .boton--primary {
   background-color: #337AB7;
   border-color: #1d4567; }
   .boton--primary:hover {
-    background-color: #1d4567; }
+    background-color: #22527b; }
   .boton--primary:active {
-    box-shadow: inset 0px 3px 10px 0px black; }
+    box-shadow: inset 0px 3px 10px 0px #122a3f; }
 
 .boton--error {
   background-color: #eae364;
   border-color: #ccc31c; }
   .boton--error:hover {
-    background-color: #ccc31c; }
+    background-color: #e1d721; }
   .boton--error:active {
-    box-shadow: inset 0px 3px 10px 0px #191803; }
+    box-shadow: inset 0px 3px 10px 0px #9f9816; }
 
 .boton--info {
   background-color: #3c7965;
   border-color: #1a352c; }
   .boton--info:hover {
-    background-color: #1a352c; }
+    background-color: #23463a; }
   .boton--info:active {
-    box-shadow: inset 0px 3px 10px 0px black; }
+    box-shadow: inset 0px 3px 10px 0px #091310; }
 
 .boton--warning {
   background-color: #E08E86;
   border-color: #cb4235; }
   .boton--warning:hover {
-    background-color: #cb4235; }
+    background-color: #d05549; }
   .boton--warning:active {
-    box-shadow: inset 0px 3px 10px 0px #290d0b; }
-
-.boton--xl {
-  font-size: 20px;
-  padding: 10px; }
-
-.boton--l {
-  font-size: 20px;
-  padding: 8px; }
-
-.boton--s {
-  font-size: 10px;
-  padding: 5px; }
+    box-shadow: inset 0px 3px 10px 0px #a3352a; }
 
 .boton--xs {
   font-size: 5px;
+  padding: 2px; }
+
+.boton--s {
+  font-size: 10px;
   padding: 4px; }
+
+.boton--l {
+  font-size: 15px;
+  padding: 6px; }
+
+.boton--xl {
+  font-size: 20px;
+  padding: 8px; }
 
 .mensaje {
   font-size: 80%;
@@ -545,22 +546,6 @@ html {
   background-color: #f5dad7;
   color: #E08E86; }
 
-/*.mensaje--primary{
-    background-color: #8dbbe0;
-    color:#f2eeed;
-}
-.mensaje--error{
-    background-color: #efe4ac;
-    color:#8A6D5F;
-}
-.mensaje--info{
-    background-color: #D9EDF7;
-    color:#3C763D;
-}
-.mensaje--warning{
-    background-color: #F2DEDE;
-    color:#A94D6D;
-}*/
 .menu__item {
   font-family: "Lucida Grande",Verdana,Lucida,Helvetica,Arial,sans-serif;
   float: left;

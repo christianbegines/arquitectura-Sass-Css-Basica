@@ -21,16 +21,16 @@
     border-right:2px solid #5983a5; 
     background-color: white;
 }
-@each $format, $color in $format-variations{
-    .panel--#{$format}{
+@each $functionality, $color in $functional-variations{
+    .panel--#{$functionality}{
        box-shadow: 3px 3px 10px darken($color,40%); 
     }
-    .panel__cabecera--#{$format}{
+    .panel__cabecera--#{$functionality}{
         background-color: $color;
         border:2px solid darken($color,20%);
         color:darken($color,20%);
     }
-    .panel__contenido--#{$format}{
+    .panel__contenido--#{$functionality}{
         border-bottom:2px solid darken($color,20%); 
         border-left:2px solid darken($color,20%); 
         border-right:2px solid darken($color,20%);
